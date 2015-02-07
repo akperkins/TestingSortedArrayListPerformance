@@ -25,15 +25,9 @@ public class SortedArrayList<T> extends ArrayList<T>  {
 
     @Override
     public boolean addAll(Collection<? extends T> collection) {
-        boolean result = super.addAll(collection);
-        Collections.sort(this, comparator);
-        return result;
-    }
-
-    @Override
-    public boolean addAll(int index, Collection<? extends T> collection) {
-        boolean result = super.addAll(index, collection);
-        Collections.sort(this, comparator);
-        return result;
+        for(T t: collection){
+            add(t);
+        }
+        return true;
     }
 }

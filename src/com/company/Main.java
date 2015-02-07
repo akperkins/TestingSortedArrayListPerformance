@@ -4,8 +4,8 @@ import java.text.Collator;
 import java.util.ArrayList;
 
 public class Main {
-    public static final int USER_SCROLLS = 1;
-    public static final int PAGE_NUMBER = 1000;
+    public static final int USER_SCROLLS = 1000;
+    public static final int PAGE_NUMBER = 16;
 
     public static void main(String[] args) {
         final ArrayList<ArrayList<String>> arrayLists = new ArrayList<ArrayList<String>>();
